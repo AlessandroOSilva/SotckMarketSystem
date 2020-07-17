@@ -10,7 +10,14 @@ namespace MarketStockSystem.Services
 {
     class CadastroService : ICadastrable
     {
+
         protected Acao _a = new Acao();
+
+        public CadastroService(Acao a)
+        {
+            _a = a;
+        }
+
         public void CadastrarAcao(Acao a)
         {
             _a.CodAtivo = a.CodAtivo;
