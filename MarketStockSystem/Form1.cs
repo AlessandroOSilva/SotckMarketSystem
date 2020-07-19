@@ -15,9 +15,112 @@ namespace MarketStockSystem
         public Form1()
         {
             InitializeComponent();
+            MudarDesign();
+        }
+
+        private void MudarDesign()
+        {
+            panelCad.Visible = false;
+            panelList.Visible = false;
+            panelWallet.Visible = false;
+        }
+        public void EsconderSubmenu()
+        {
+            if (panelCad.Visible == true)
+                panelCad.Visible = false;
+            if (panelList.Visible == true)
+                panelList.Visible = false;
+            if (panelWallet.Visible == true)
+                panelWallet.Visible = false;
+        }
+
+        private void MostrarSubmenu(Panel submenu)
+        {
+            if (submenu.Visible == false)
+            {
+                EsconderSubmenu();
+                submenu.Visible = true;
+            }
+            else
+                submenu.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            MostrarSubmenu(panelCad);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            MostrarSubmenu(panelList);
+        }
+
+        private void btnCarteira_Click(object sender, EventArgs e)
+        {
+            MostrarSubmenu(panelWallet);
+        }
+
+        private void btnCadAcao_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnCadOpcao_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnCadFii_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnListarIndicadores_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnListarSegmento_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnListarPreco_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnCarteiraAcoes_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnCarteiraOpcoes_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnCarteiraFii_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void btnCadastrarAtivo_Click(object sender, EventArgs e)
+        {
+            EsconderSubmenu();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

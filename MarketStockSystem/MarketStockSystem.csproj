@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Entities\Acao.cs" />
     <Compile Include="Entities\Ativo.cs" />
+    <Compile Include="Entities\Carteira.cs" />
     <Compile Include="Entities\Enums\CategoriaAcao.cs" />
     <Compile Include="Entities\Enums\SegmentoEmpresa.cs" />
     <Compile Include="Form1.cs">

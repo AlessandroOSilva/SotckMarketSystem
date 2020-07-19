@@ -29,109 +29,215 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCadastrarAtivo = new System.Windows.Forms.Button();
+            this.btnCarteiraFii = new System.Windows.Forms.Button();
+            this.btnCarteiraAcoes = new System.Windows.Forms.Button();
+            this.btnCarteiraOpcoes = new System.Windows.Forms.Button();
+            this.btnCarteira = new System.Windows.Forms.Button();
+            this.btnListarPreco = new System.Windows.Forms.Button();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.panelCad = new System.Windows.Forms.Panel();
+            this.btnCadFii = new System.Windows.Forms.Button();
+            this.btnCadAcao = new System.Windows.Forms.Button();
+            this.btnCadOpcao = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnListarSegmento = new System.Windows.Forms.Button();
+            this.btnListarIndicadores = new System.Windows.Forms.Button();
+            this.panelList = new System.Windows.Forms.Panel();
+            this.panelWallet = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panelCad.SuspendLayout();
+            this.panelList.SuspendLayout();
+            this.panelWallet.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.button12);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.panelWallet);
+            this.panel1.Controls.Add(this.btnCarteira);
+            this.panel1.Controls.Add(this.panelList);
+            this.panel1.Controls.Add(this.btnListar);
+            this.panel1.Controls.Add(this.panelCad);
+            this.panel1.Controls.Add(this.btnCadastrar);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 681);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel3
+            // btnCadastrarAtivo
             // 
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Location = new System.Drawing.Point(0, 192);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 114);
-            this.panel3.TabIndex = 2;
+            this.btnCadastrarAtivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadastrarAtivo.FlatAppearance.BorderSize = 0;
+            this.btnCadastrarAtivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrarAtivo.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCadastrarAtivo.Location = new System.Drawing.Point(0, 110);
+            this.btnCadastrarAtivo.Name = "btnCadastrarAtivo";
+            this.btnCadastrarAtivo.Size = new System.Drawing.Size(200, 40);
+            this.btnCadastrarAtivo.TabIndex = 8;
+            this.btnCadastrarAtivo.Text = "Cadastrar";
+            this.btnCadastrarAtivo.UseVisualStyleBackColor = false;
+            this.btnCadastrarAtivo.Click += new System.EventHandler(this.btnCadastrarAtivo_Click);
             // 
-            // button4
+            // btnCarteiraFii
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button4.Location = new System.Drawing.Point(0, 74);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "FII";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCarteiraFii.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCarteiraFii.FlatAppearance.BorderSize = 0;
+            this.btnCarteiraFii.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarteiraFii.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCarteiraFii.Location = new System.Drawing.Point(0, 74);
+            this.btnCarteiraFii.Name = "btnCarteiraFii";
+            this.btnCarteiraFii.Size = new System.Drawing.Size(200, 40);
+            this.btnCarteiraFii.TabIndex = 3;
+            this.btnCarteiraFii.Text = "FII";
+            this.btnCarteiraFii.UseVisualStyleBackColor = false;
+            this.btnCarteiraFii.Click += new System.EventHandler(this.btnCarteiraFii_Click);
             // 
-            // button3
+            // btnCarteiraAcoes
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button3.Location = new System.Drawing.Point(0, 36);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Opção";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnCarteiraAcoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCarteiraAcoes.FlatAppearance.BorderSize = 0;
+            this.btnCarteiraAcoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarteiraAcoes.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCarteiraAcoes.Location = new System.Drawing.Point(0, 0);
+            this.btnCarteiraAcoes.Name = "btnCarteiraAcoes";
+            this.btnCarteiraAcoes.Size = new System.Drawing.Size(200, 40);
+            this.btnCarteiraAcoes.TabIndex = 1;
+            this.btnCarteiraAcoes.Text = "Ações";
+            this.btnCarteiraAcoes.UseVisualStyleBackColor = false;
+            this.btnCarteiraAcoes.Click += new System.EventHandler(this.btnCarteiraAcoes_Click);
             // 
-            // button2
+            // btnCarteiraOpcoes
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Ação";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCarteiraOpcoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCarteiraOpcoes.FlatAppearance.BorderSize = 0;
+            this.btnCarteiraOpcoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarteiraOpcoes.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCarteiraOpcoes.Location = new System.Drawing.Point(0, 36);
+            this.btnCarteiraOpcoes.Name = "btnCarteiraOpcoes";
+            this.btnCarteiraOpcoes.Size = new System.Drawing.Size(200, 40);
+            this.btnCarteiraOpcoes.TabIndex = 2;
+            this.btnCarteiraOpcoes.Text = "Opções";
+            this.btnCarteiraOpcoes.UseVisualStyleBackColor = false;
+            this.btnCarteiraOpcoes.Click += new System.EventHandler(this.btnCarteiraOpcoes_Click);
             // 
-            // button1
+            // btnCarteira
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button1.Location = new System.Drawing.Point(0, 156);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cadastrar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCarteira.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
+            this.btnCarteira.FlatAppearance.BorderSize = 0;
+            this.btnCarteira.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarteira.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCarteira.Location = new System.Drawing.Point(0, 458);
+            this.btnCarteira.Name = "btnCarteira";
+            this.btnCarteira.Size = new System.Drawing.Size(200, 40);
+            this.btnCarteira.TabIndex = 6;
+            this.btnCarteira.Text = "Carteira";
+            this.btnCarteira.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCarteira.UseVisualStyleBackColor = false;
+            this.btnCarteira.Click += new System.EventHandler(this.btnCarteira_Click);
+            // 
+            // btnListarPreco
+            // 
+            this.btnListarPreco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnListarPreco.FlatAppearance.BorderSize = 0;
+            this.btnListarPreco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListarPreco.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnListarPreco.Location = new System.Drawing.Point(0, 74);
+            this.btnListarPreco.Name = "btnListarPreco";
+            this.btnListarPreco.Size = new System.Drawing.Size(200, 40);
+            this.btnListarPreco.TabIndex = 3;
+            this.btnListarPreco.Text = "Por Preço";
+            this.btnListarPreco.UseVisualStyleBackColor = false;
+            this.btnListarPreco.Click += new System.EventHandler(this.btnListarPreco_Click);
+            // 
+            // btnListar
+            // 
+            this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
+            this.btnListar.FlatAppearance.BorderSize = 0;
+            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListar.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnListar.Location = new System.Drawing.Point(0, 307);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(200, 40);
+            this.btnListar.TabIndex = 4;
+            this.btnListar.Text = "Listar";
+            this.btnListar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // panelCad
+            // 
+            this.panelCad.Controls.Add(this.btnCadFii);
+            this.panelCad.Controls.Add(this.btnCadAcao);
+            this.panelCad.Controls.Add(this.btnCadOpcao);
+            this.panelCad.Location = new System.Drawing.Point(0, 192);
+            this.panelCad.Name = "panelCad";
+            this.panelCad.Size = new System.Drawing.Size(200, 114);
+            this.panelCad.TabIndex = 2;
+            // 
+            // btnCadFii
+            // 
+            this.btnCadFii.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadFii.FlatAppearance.BorderSize = 0;
+            this.btnCadFii.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadFii.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCadFii.Location = new System.Drawing.Point(0, 74);
+            this.btnCadFii.Name = "btnCadFii";
+            this.btnCadFii.Size = new System.Drawing.Size(200, 40);
+            this.btnCadFii.TabIndex = 3;
+            this.btnCadFii.Text = "FII";
+            this.btnCadFii.UseVisualStyleBackColor = false;
+            this.btnCadFii.Click += new System.EventHandler(this.btnCadFii_Click);
+            // 
+            // btnCadAcao
+            // 
+            this.btnCadAcao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadAcao.FlatAppearance.BorderSize = 0;
+            this.btnCadAcao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadAcao.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCadAcao.Location = new System.Drawing.Point(0, 0);
+            this.btnCadAcao.Name = "btnCadAcao";
+            this.btnCadAcao.Size = new System.Drawing.Size(200, 40);
+            this.btnCadAcao.TabIndex = 1;
+            this.btnCadAcao.Text = "Ação";
+            this.btnCadAcao.UseVisualStyleBackColor = false;
+            this.btnCadAcao.Click += new System.EventHandler(this.btnCadAcao_Click);
+            // 
+            // btnCadOpcao
+            // 
+            this.btnCadOpcao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCadOpcao.FlatAppearance.BorderSize = 0;
+            this.btnCadOpcao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadOpcao.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCadOpcao.Location = new System.Drawing.Point(0, 36);
+            this.btnCadOpcao.Name = "btnCadOpcao";
+            this.btnCadOpcao.Size = new System.Drawing.Size(200, 40);
+            this.btnCadOpcao.TabIndex = 2;
+            this.btnCadOpcao.Text = "Opção";
+            this.btnCadOpcao.UseVisualStyleBackColor = false;
+            this.btnCadOpcao.Click += new System.EventHandler(this.btnCadOpcao_Click);
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
+            this.btnCadastrar.FlatAppearance.BorderSize = 0;
+            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnCadastrar.Location = new System.Drawing.Point(0, 156);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(200, 40);
+            this.btnCadastrar.TabIndex = 0;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -140,132 +246,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 159);
             this.panel2.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.button7);
-            this.panel4.Location = new System.Drawing.Point(0, 343);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 114);
-            this.panel4.TabIndex = 5;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button5.Location = new System.Drawing.Point(0, 74);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 40);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 40);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button7.Location = new System.Drawing.Point(0, 36);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 40);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button8.Location = new System.Drawing.Point(0, 307);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 40);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Listar";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.button9);
-            this.panel5.Controls.Add(this.button10);
-            this.panel5.Controls.Add(this.button11);
-            this.panel5.Location = new System.Drawing.Point(0, 494);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 114);
-            this.panel5.TabIndex = 7;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button9.Location = new System.Drawing.Point(0, 74);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 40);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button10.Location = new System.Drawing.Point(0, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(200, 40);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button11.Location = new System.Drawing.Point(0, 36);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(200, 40);
-            this.button11.TabIndex = 2;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.button12.Location = new System.Drawing.Point(0, 458);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(200, 40);
-            this.button12.TabIndex = 6;
-            this.button12.Text = "button12";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -278,27 +258,80 @@
             // 
             // panel7
             // 
+            this.panel7.AutoScroll = true;
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(100)))));
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(200, 159);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(684, 522);
             this.panel7.TabIndex = 2;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            // 
+            // btnListarSegmento
+            // 
+            this.btnListarSegmento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnListarSegmento.FlatAppearance.BorderSize = 0;
+            this.btnListarSegmento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListarSegmento.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnListarSegmento.Location = new System.Drawing.Point(0, 36);
+            this.btnListarSegmento.Name = "btnListarSegmento";
+            this.btnListarSegmento.Size = new System.Drawing.Size(200, 40);
+            this.btnListarSegmento.TabIndex = 2;
+            this.btnListarSegmento.Text = "Por Segmento";
+            this.btnListarSegmento.UseVisualStyleBackColor = false;
+            this.btnListarSegmento.Click += new System.EventHandler(this.btnListarSegmento_Click);
+            // 
+            // btnListarIndicadores
+            // 
+            this.btnListarIndicadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnListarIndicadores.FlatAppearance.BorderSize = 0;
+            this.btnListarIndicadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListarIndicadores.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnListarIndicadores.Location = new System.Drawing.Point(0, 0);
+            this.btnListarIndicadores.Name = "btnListarIndicadores";
+            this.btnListarIndicadores.Size = new System.Drawing.Size(200, 40);
+            this.btnListarIndicadores.TabIndex = 1;
+            this.btnListarIndicadores.Text = "Por Indicadores";
+            this.btnListarIndicadores.UseVisualStyleBackColor = false;
+            this.btnListarIndicadores.Click += new System.EventHandler(this.btnListarIndicadores_Click);
+            // 
+            // panelList
+            // 
+            this.panelList.Controls.Add(this.btnListarPreco);
+            this.panelList.Controls.Add(this.btnListarIndicadores);
+            this.panelList.Controls.Add(this.btnListarSegmento);
+            this.panelList.Location = new System.Drawing.Point(0, 343);
+            this.panelList.Name = "panelList";
+            this.panelList.Size = new System.Drawing.Size(200, 114);
+            this.panelList.TabIndex = 5;
+            // 
+            // panelWallet
+            // 
+            this.panelWallet.Controls.Add(this.btnCadastrarAtivo);
+            this.panelWallet.Controls.Add(this.btnCarteiraFii);
+            this.panelWallet.Controls.Add(this.btnCarteiraAcoes);
+            this.panelWallet.Controls.Add(this.btnCarteiraOpcoes);
+            this.panelWallet.Location = new System.Drawing.Point(0, 494);
+            this.panelWallet.Name = "panelWallet";
+            this.panelWallet.Size = new System.Drawing.Size(200, 150);
+            this.panelWallet.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(884, 681);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            this.panelCad.ResumeLayout(false);
+            this.panelList.ResumeLayout(false);
+            this.panelWallet.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -306,24 +339,25 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelCad;
+        private System.Windows.Forms.Button btnCadFii;
+        private System.Windows.Forms.Button btnCadOpcao;
+        private System.Windows.Forms.Button btnCadAcao;
+        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnCarteiraFii;
+        private System.Windows.Forms.Button btnCarteiraAcoes;
+        private System.Windows.Forms.Button btnCarteiraOpcoes;
+        private System.Windows.Forms.Button btnCarteira;
+        private System.Windows.Forms.Button btnListarPreco;
+        private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnCadastrarAtivo;
+        private System.Windows.Forms.Panel panelWallet;
+        private System.Windows.Forms.Panel panelList;
+        private System.Windows.Forms.Button btnListarIndicadores;
+        private System.Windows.Forms.Button btnListarSegmento;
     }
 }
 
