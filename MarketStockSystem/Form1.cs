@@ -124,5 +124,10 @@ namespace MarketStockSystem
         {
 
         }
+
+        private void panelWallet_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
