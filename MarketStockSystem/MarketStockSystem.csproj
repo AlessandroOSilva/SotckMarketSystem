@@ -63,6 +63,18 @@
     <Compile Include="Forms\frmCadastrarAcao.Designer.cs">
       <DependentUpon>frmCadastrarAcao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmCadastrarOpcao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastrarOpcao.Designer.cs">
+      <DependentUpon>frmCadastrarOpcao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCadastroFii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastroFii.Designer.cs">
+      <DependentUpon>frmCadastroFii.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\ICadastrable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,6 +84,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCadastrarAcao.resx">
       <DependentUpon>frmCadastrarAcao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastrarOpcao.resx">
+      <DependentUpon>frmCadastrarOpcao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastroFii.resx">
+      <DependentUpon>frmCadastroFii.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

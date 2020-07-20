@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarketStockSystem.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,16 +73,19 @@ namespace MarketStockSystem
 
         private void btnCadAcao_Click(object sender, EventArgs e)
         {
+            AbrirJanelaFilho(new frmCadastrarAcao());
             EsconderSubmenu();
         }
 
         private void btnCadOpcao_Click(object sender, EventArgs e)
         {
+            AbrirJanelaFilho(new frmCadastrarOpcao());
             EsconderSubmenu();
         }
 
         private void btnCadFii_Click(object sender, EventArgs e)
         {
+            AbrirJanelaFilho(new frmCadastroFii());
             EsconderSubmenu();
         }
 
@@ -120,6 +124,22 @@ namespace MarketStockSystem
             EsconderSubmenu();
         }
 
+        private Form janelaAtiva = null;
+        private void AbrirJanelaFilho(Form frmFilho)
+        {
+            if(janelaAtiva != null)
+                janelaAtiva.Close();
+            janelaAtiva = frmFilho;
+            frmFilho.TopLevel =false;
+            frmFilho.FormBorderStyle = FormBorderStyle.None;
+            frmFilho.Dock = DockStyle.Fill;
+            panel7.Controls.Add(frmFilho);
+            panel7.Tag = frmFilho;
+            frmFilho.BringToFront();
+            frmFilho.Show();
+
+            
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 

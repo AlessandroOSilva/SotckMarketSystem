@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace MarketStockSystem.Forms
 {
-    public partial class frmCadastrarAcao : Form
+    public partial class frmCadastrarOpcao : Form
     {
-        public frmCadastrarAcao()
+        public frmCadastrarOpcao()
         {
             InitializeComponent();
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelTitle_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
