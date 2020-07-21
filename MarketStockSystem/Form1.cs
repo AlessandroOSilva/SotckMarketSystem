@@ -91,16 +91,19 @@ namespace MarketStockSystem
 
         private void btnListarIndicadores_Click(object sender, EventArgs e)
         {
+            AbrirJanelaFilho(new frmListarPorIndicadores());
             EsconderSubmenu();
         }
 
         private void btnListarSegmento_Click(object sender, EventArgs e)
         {
+            AbrirJanelaFilho(new frmListarSegmento());
             EsconderSubmenu();
         }
 
         private void btnListarPreco_Click(object sender, EventArgs e)
         {
+            AbrirJanelaFilho(new frmListarPreco());
             EsconderSubmenu();
         }
 

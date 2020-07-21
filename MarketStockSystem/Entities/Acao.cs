@@ -1,6 +1,8 @@
 ﻿using MarketStockSystem.Entities.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,8 +11,17 @@ namespace MarketStockSystem.Entities
 {
     class Acao : Ativo
     {
+        [Required]
+        [MaxLength(100)]
+        [MinLength(5)]
         public string Empresa { get; set; }
+        [Required]
+        [MaxLength(100)]
+        [MinLength(5)]
         public CategoriaAcao Categoria { get; set; }
+        [Required]
+        [MaxLength(100)]
+        [MinLength(5)]
         public SegmentoEmpresa Segmento { get; set; }
         public double LucroAnoAnt { get; set; }
         public int QuantAcoes { get; set; }
