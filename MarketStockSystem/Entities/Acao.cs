@@ -1,11 +1,14 @@
 ﻿using MarketStockSystem.Entities.Enums;
 using System;
+using System.Net;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using YahooFinanceApi;
 
 namespace MarketStockSystem.Entities
 {
@@ -23,6 +26,7 @@ namespace MarketStockSystem.Entities
         [MaxLength(100)]
         [MinLength(5)]
         public SegmentoEmpresa Segmento { get; set; }
+        public double Preco { get; set; }
         public double LucroAnoAnt { get; set; }
         public int QuantAcoes { get; set; }
         public double DividaLiquida { get; set; }
@@ -58,5 +62,16 @@ namespace MarketStockSystem.Entities
 
             return pl;
         }
+
+        /*private double CapturarPreco(Acao a)
+        {
+            string route;
+            using (WebClient web = new WebClient())
+            {
+                route = web.DownloadString("https://www.marketwatch.com/investing/stock/" + a.CodAtivo + "?countrycode=br");
+                List<Acao> acoes = YahooFinance.Parse(route);
+            }
+
+        }*/
     }
 }

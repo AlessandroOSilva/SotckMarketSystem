@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarketStockSystem.Entities.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +36,16 @@ namespace MarketStockSystem.Forms
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmCadastrarAcao_Load(object sender, EventArgs e)
+        {
+            comboBox1.DataSource = Enum.GetValues(typeof(SegmentoEmpresa));
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
