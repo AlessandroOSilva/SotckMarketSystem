@@ -1,10 +1,12 @@
-﻿using MarketStockSystem.Entities.Enums;
+﻿using MarketStockSystem.Entities;
+using MarketStockSystem.Entities.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -40,12 +42,18 @@ namespace MarketStockSystem.Forms
 
         private void frmCadastrarAcao_Load(object sender, EventArgs e)
         {
-            comboBox1.DataSource = Enum.GetValues(typeof(SegmentoEmpresa));
+            cmbSegmento.DataSource = Enum.GetValues(typeof(SegmentoEmpresa));
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void CadastratAcao(Acao a)
+        {
+            a.Empresa = txbNome.Text;
+            a.CodAtivo = txbCod.Text;
         }
     }
 }

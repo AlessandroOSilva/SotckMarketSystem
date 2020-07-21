@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarketStockSystem.Entities.Enums
 {
-    enum CategoriaAcao : int
+    public enum CategoriaAcao : int
     {
         Ordinaria,
         Preferencial,

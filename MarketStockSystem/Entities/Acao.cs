@@ -12,7 +12,7 @@ using YahooFinanceApi;
 
 namespace MarketStockSystem.Entities
 {
-    class Acao : Ativo
+    public class Acao : Ativo
     {
         [Required]
         [MaxLength(100)]
@@ -63,15 +63,5 @@ namespace MarketStockSystem.Entities
             return pl;
         }
 
-        /*private double CapturarPreco(Acao a)
-        {
-            string route;
-            using (WebClient web = new WebClient())
-            {
-                route = web.DownloadString("https://www.marketwatch.com/investing/stock/" + a.CodAtivo + "?countrycode=br");
-                List<Acao> acoes = YahooFinance.Parse(route);
-            }
-
-        }*/
     }
 }

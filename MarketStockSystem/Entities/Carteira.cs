@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarketStockSystem.Entities
 {
-    class Carteira
+    public class Carteira
     {
         public int Id { get; set; }
         public ICollection<Ativo> Comprados { get; set; }

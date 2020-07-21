@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MarketStockSystem.Entities.Enums
 {
-    enum SegmentoEmpresa : int
+    public enum SegmentoEmpresa : int
     {
         Alimentos,
         Bebidas,

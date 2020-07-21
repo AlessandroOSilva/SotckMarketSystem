@@ -31,27 +31,27 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panelCadastro = new System.Windows.Forms.Panel();
+            this.cmbSegmento = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txbDivida = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txbPatrimonio = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txbCod = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txbLucro = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbQuantAcoes = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbPreco = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelBotoes = new System.Windows.Forms.Panel();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panelTitle.SuspendLayout();
             this.panelCadastro.SuspendLayout();
             this.panelBotoes.SuspendLayout();
@@ -80,27 +80,47 @@
             // 
             // panelCadastro
             // 
-            this.panelCadastro.Controls.Add(this.comboBox1);
+            this.panelCadastro.Controls.Add(this.cmbSegmento);
             this.panelCadastro.Controls.Add(this.label6);
             this.panelCadastro.Controls.Add(this.label11);
-            this.panelCadastro.Controls.Add(this.textBox8);
+            this.panelCadastro.Controls.Add(this.txbDivida);
             this.panelCadastro.Controls.Add(this.label8);
-            this.panelCadastro.Controls.Add(this.textBox9);
+            this.panelCadastro.Controls.Add(this.txbPatrimonio);
             this.panelCadastro.Controls.Add(this.label9);
-            this.panelCadastro.Controls.Add(this.textBox10);
+            this.panelCadastro.Controls.Add(this.txbCod);
             this.panelCadastro.Controls.Add(this.label10);
-            this.panelCadastro.Controls.Add(this.textBox4);
+            this.panelCadastro.Controls.Add(this.txbLucro);
             this.panelCadastro.Controls.Add(this.label4);
-            this.panelCadastro.Controls.Add(this.textBox3);
+            this.panelCadastro.Controls.Add(this.txbQuantAcoes);
             this.panelCadastro.Controls.Add(this.label3);
-            this.panelCadastro.Controls.Add(this.textBox2);
+            this.panelCadastro.Controls.Add(this.txbPreco);
             this.panelCadastro.Controls.Add(this.label2);
-            this.panelCadastro.Controls.Add(this.textBox1);
+            this.panelCadastro.Controls.Add(this.txbNome);
             this.panelCadastro.Controls.Add(this.label1);
             this.panelCadastro.Location = new System.Drawing.Point(158, 106);
             this.panelCadastro.Name = "panelCadastro";
             this.panelCadastro.Size = new System.Drawing.Size(320, 320);
             this.panelCadastro.TabIndex = 1;
+            // 
+            // cmbSegmento
+            // 
+            this.cmbSegmento.FormattingEnabled = true;
+            this.cmbSegmento.Location = new System.Drawing.Point(98, 79);
+            this.cmbSegmento.Name = "cmbSegmento";
+            this.cmbSegmento.Size = new System.Drawing.Size(196, 21);
+            this.cmbSegmento.TabIndex = 22;
+            this.cmbSegmento.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(4, 84);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 16);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Segmento:";
             // 
             // label11
             // 
@@ -113,16 +133,16 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "*Refere-se ao ultimo ano.";
             // 
-            // textBox8
+            // txbDivida
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(98, 149);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(196, 22);
-            this.textBox8.TabIndex = 15;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.txbDivida.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbDivida.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbDivida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbDivida.Location = new System.Drawing.Point(98, 149);
+            this.txbDivida.Name = "txbDivida";
+            this.txbDivida.Size = new System.Drawing.Size(196, 22);
+            this.txbDivida.TabIndex = 15;
+            this.txbDivida.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label8
             // 
@@ -135,15 +155,15 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Dívida:";
             // 
-            // textBox9
+            // txbPatrimonio
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(98, 112);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(198, 22);
-            this.textBox9.TabIndex = 13;
+            this.txbPatrimonio.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbPatrimonio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbPatrimonio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPatrimonio.Location = new System.Drawing.Point(98, 112);
+            this.txbPatrimonio.Name = "txbPatrimonio";
+            this.txbPatrimonio.Size = new System.Drawing.Size(198, 22);
+            this.txbPatrimonio.TabIndex = 13;
             // 
             // label9
             // 
@@ -156,15 +176,15 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Patri.:";
             // 
-            // textBox10
+            // txbCod
             // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(98, 48);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(198, 22);
-            this.textBox10.TabIndex = 11;
+            this.txbCod.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbCod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbCod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCod.Location = new System.Drawing.Point(98, 48);
+            this.txbCod.Name = "txbCod";
+            this.txbCod.Size = new System.Drawing.Size(198, 22);
+            this.txbCod.TabIndex = 11;
             // 
             // label10
             // 
@@ -177,16 +197,16 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "Código: ";
             // 
-            // textBox4
+            // txbLucro
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(98, 259);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(196, 22);
-            this.textBox4.TabIndex = 7;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txbLucro.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbLucro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbLucro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbLucro.Location = new System.Drawing.Point(98, 259);
+            this.txbLucro.Name = "txbLucro";
+            this.txbLucro.Size = new System.Drawing.Size(196, 22);
+            this.txbLucro.TabIndex = 7;
+            this.txbLucro.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
@@ -199,15 +219,15 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Lucro*:";
             // 
-            // textBox3
+            // txbQuantAcoes
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(98, 225);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(196, 22);
-            this.textBox3.TabIndex = 5;
+            this.txbQuantAcoes.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbQuantAcoes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbQuantAcoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbQuantAcoes.Location = new System.Drawing.Point(98, 225);
+            this.txbQuantAcoes.Name = "txbQuantAcoes";
+            this.txbQuantAcoes.Size = new System.Drawing.Size(196, 22);
+            this.txbQuantAcoes.TabIndex = 5;
             // 
             // label3
             // 
@@ -220,15 +240,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Nr.  de Ações:";
             // 
-            // textBox2
+            // txbPreco
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(98, 188);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 22);
-            this.textBox2.TabIndex = 3;
+            this.txbPreco.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbPreco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPreco.Location = new System.Drawing.Point(98, 188);
+            this.txbPreco.Name = "txbPreco";
+            this.txbPreco.Size = new System.Drawing.Size(196, 22);
+            this.txbPreco.TabIndex = 3;
             // 
             // label2
             // 
@@ -241,15 +261,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Preço: ";
             // 
-            // textBox1
+            // txbNome
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(98, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 22);
-            this.textBox1.TabIndex = 1;
+            this.txbNome.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNome.Location = new System.Drawing.Point(98, 4);
+            this.txbNome.Name = "txbNome";
+            this.txbNome.Size = new System.Drawing.Size(198, 22);
+            this.txbNome.TabIndex = 1;
             // 
             // label1
             // 
@@ -316,26 +336,6 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(4, 84);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 16);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Segmento:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(98, 79);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 21);
-            this.comboBox1.TabIndex = 22;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // frmCadastrarAcao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,19 +364,19 @@
 
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Panel panelCadastro;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txbLucro;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbQuantAcoes;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbPreco;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbNome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txbDivida;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txbPatrimonio;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txbCod;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panelBotoes;
         private System.Windows.Forms.Button btnSalvar;
@@ -385,6 +385,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbSegmento;
     }
 }

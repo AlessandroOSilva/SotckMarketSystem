@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MarketStockSystem.Entities
 {
-    abstract class Ativo
+    public abstract class Ativo
     {
         public int Id { get; set; }
         [MaxLength(6)]
