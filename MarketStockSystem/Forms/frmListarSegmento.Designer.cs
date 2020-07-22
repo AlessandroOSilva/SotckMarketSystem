@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbSeg = new System.Windows.Forms.ComboBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panelData = new System.Windows.Forms.Panel();
@@ -61,14 +61,14 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "LISTAGEM POR SEGMENTO";
             // 
-            // comboBox1
+            // cmbSeg
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(101, 119);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 21);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbSeg.FormattingEnabled = true;
+            this.cmbSeg.Location = new System.Drawing.Point(101, 119);
+            this.cmbSeg.Name = "cmbSeg";
+            this.cmbSeg.Size = new System.Drawing.Size(183, 21);
+            this.cmbSeg.TabIndex = 12;
+            this.cmbSeg.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnPesquisar
             // 
@@ -83,6 +83,7 @@
             this.btnPesquisar.TabIndex = 11;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // label1
             // 
@@ -111,6 +112,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(660, 316);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -135,7 +137,7 @@
             this.ClientSize = new System.Drawing.Size(668, 483);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelData);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbSeg);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -157,7 +159,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbSeg;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelData;
