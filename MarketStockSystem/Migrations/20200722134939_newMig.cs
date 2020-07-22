@@ -3,7 +3,7 @@ using MySql.Data.EntityFrameworkCore.Metadata;
 
 namespace MarketStockSystem.Migrations
 {
-    public partial class initial : Migration
+    public partial class newMig : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,6 @@ namespace MarketStockSystem.Migrations
                     CodAtivo = table.Column<string>(maxLength: 6, nullable: true),
                     CotacaoAtual = table.Column<double>(nullable: false),
                     Empresa = table.Column<string>(maxLength: 100, nullable: false),
-                    Categoria = table.Column<int>(maxLength: 100, nullable: false),
                     Segmento = table.Column<int>(maxLength: 100, nullable: false),
                     Preco = table.Column<double>(nullable: false),
                     LucroAnoAnt = table.Column<double>(nullable: false),

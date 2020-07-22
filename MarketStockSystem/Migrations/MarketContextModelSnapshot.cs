@@ -22,10 +22,6 @@ namespace MarketStockSystem.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Categoria")
-                        .HasColumnType("int")
-                        .HasMaxLength(100);
-
                     b.Property<string>("CodAtivo")
                         .HasColumnType("varchar(6)")
                         .HasMaxLength(6);

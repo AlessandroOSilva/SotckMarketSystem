@@ -20,9 +20,8 @@ namespace MarketStockSystem.Entities
 
         }
 
-        protected Ativo(int id, string codAtivo, double cotacaoAtual)
+        protected Ativo(string codAtivo, double cotacaoAtual)
         {
-            Id = id;
             CodAtivo = codAtivo;
             CotacaoAtual = cotacaoAtual;
         }

@@ -22,7 +22,6 @@ namespace MarketStockSystem.Services
         {
             _a.CodAtivo = a.CodAtivo;
             _a.Empresa = a.Empresa;
-            _a.Categoria = a.Categoria;
             _a.Segmento = a.Segmento;
             _a.CotacaoAtual = a.CotacaoAtual;
             _a.LucroAnoAnt = a.LucroAnoAnt;

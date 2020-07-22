@@ -21,10 +21,6 @@ namespace MarketStockSystem.Entities
         [Required]
         [MaxLength(100)]
         [MinLength(5)]
-        public CategoriaAcao Categoria { get; set; }
-        [Required]
-        [MaxLength(100)]
-        [MinLength(5)]
         public SegmentoEmpresa Segmento { get; set; }
         public double Preco { get; set; }
         public double LucroAnoAnt { get; set; }
@@ -37,11 +33,10 @@ namespace MarketStockSystem.Entities
 
         }
 
-        public Acao(int id, string codAtivo, double cotacaoAtual, string empresa, CategoriaAcao categoria, SegmentoEmpresa segmento, double lucroAnoAnt, int quantAcoes, double dividaLiquida, double patrimonioLiquido)
-            : base(id, codAtivo, cotacaoAtual)
+        public Acao(string codAtivo, double cotacaoAtual, string empresa, SegmentoEmpresa segmento, double lucroAnoAnt, int quantAcoes, double dividaLiquida, double patrimonioLiquido)
+            : base(codAtivo, cotacaoAtual)
         {
             Empresa = empresa;
-            Categoria = categoria;
             Segmento = segmento;
             LucroAnoAnt = lucroAnoAnt;
             QuantAcoes = quantAcoes;

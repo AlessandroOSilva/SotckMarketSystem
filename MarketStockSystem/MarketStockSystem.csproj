@@ -227,9 +227,9 @@
       <DependentUpon>frmListarSegmento.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\ICadastrable.cs" />
-    <Compile Include="Migrations\20200721154740_initial.cs" />
-    <Compile Include="Migrations\20200721154740_initial.designer.cs">
-      <DependentUpon>20200721154740_initial.cs</DependentUpon>
+    <Compile Include="Migrations\20200722134939_newMig.cs" />
+    <Compile Include="Migrations\20200722134939_newMig.designer.cs">
+      <DependentUpon>20200722134939_newMig.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\MarketContextModelSnapshot.cs" />
     <Compile Include="Program.cs" />

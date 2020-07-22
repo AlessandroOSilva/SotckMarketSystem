@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MarketStockSystem.Migrations
 {
     [DbContext(typeof(MarketContext))]
-    [Migration("20200721154740_initial")]
-    partial class initial
+    [Migration("20200722134939_newMig")]
+    partial class newMig
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,10 +23,6 @@ namespace MarketStockSystem.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    b.Property<int>("Categoria")
-                        .HasColumnType("int")
-                        .HasMaxLength(100);
 
                     b.Property<string>("CodAtivo")
                         .HasColumnType("varchar(6)")
